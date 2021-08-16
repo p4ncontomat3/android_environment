@@ -50,5 +50,23 @@ Now your certificate must be installed on your device, you can check it on the S
 
 Now you can proxy your android device traffic.
 
+## Step 3 - Using Frida
+
+genymotion uses x86 arch, so get the latest [frida-server-(VERSION)-android-x86.xz
+](https://github.com/frida/frida/releases)
+
+`/opt/genymotion/tools/adb push tools/frida/x86/frida-server /data/local/tmp/frida-server`
+
+`/opt/genymotion/tools/adb shell chmod 777 /data/local/tmp/frida-server`
+
+`/opt/genymotion/tools/adb shell /data/local/tmp/frida-server &`
+
+![frida1](/includes/frida1.png)
+
+Check if everything its running properly listing the PIDs in your `avd`
+
+`frida-ps -U`
+
+![frida2](/includes/frida2.png)
 
 
