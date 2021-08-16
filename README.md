@@ -1,4 +1,4 @@
-# Setting up an android environment for dynamic analysis
+# Setting up an android environment for dynamic analysis using Genymotion and BurpSuite
 
 
 ## Step 0 - Requirements
